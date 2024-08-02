@@ -135,6 +135,4 @@ To use the model to predict heart attack risk for new data, follow these steps:
 
 This project demonstrates the use of machine learning to predict the risk of heart attack based on a variety of factors. The RandomForest model was found to be the most effective in this context. Future improvements could include the addition of more data, further feature engineering, and the exploration of other advanced machine learning techniques.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
