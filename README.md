@@ -53,27 +53,37 @@ The following steps were taken to build the heart attack risk prediction model:
 
 ## Model Performance
 
-The RandomForest model was selected as the best-performing model with the following parameters:
+## Model Performance
 
-- `n_estimators=150`
-- `max_depth=8`
-- `min_samples_split=15`
-- `min_samples_leaf=7`
-- `max_features='sqrt'`
-- `class_weight='balanced'`
+The RandomForest model was optimized with the following parameters:
+
+- `n_estimators=200`
+- `max_depth=10`  # reduced depth
+- `min_samples_split=10`  # increased minimum samples to split
+- `min_samples_leaf=5`  # increased minimum samples at leaf
+- `max_features='sqrt'`  # use sqrt of the number of features
+- `class_weight='balanced'`  # account for any imbalance
 - `random_state=42`
 
-The model achieved the following metrics on the test set:
-- Train Accuracy: 0.8704
--Train Precision: 0.8570
--Train Recall: 0.8888
--Train F1 Score: 0.8726
--Test Accuracy: 0.6406
--Test Precision: 0.6427
--Test Recall: 0.6393
--Test F1 Score: 0.6410
--Test Confusion Matrix:[[1079  602]
- [ 611 1083]]
+### Evaluation Metrics
+
+The performance of the model on the training and test sets is as follows:
+
+#### Training Set:
+- **Accuracy**: 0.8704
+- **Precision**: 0.8570
+- **Recall**: 0.8888
+- **F1 Score**: 0.8726
+
+#### Test Set:
+- **Accuracy**: 0.6406
+- **Precision**: 0.6427
+- **Recall**: 0.6393
+- **F1 Score**: 0.6410
+
+#### Test Confusion Matrix:
+[[1079 602]
+[ 611 1083]]
 
 ## How to Use
 
