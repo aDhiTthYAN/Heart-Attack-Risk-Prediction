@@ -64,10 +64,16 @@ The RandomForest model was selected as the best-performing model with the follow
 - `random_state=42`
 
 The model achieved the following metrics on the test set:
-- **Accuracy**: 0.6044
-- **Precision**: 0.62 (Class 0), 0.59 (Class 1)
-- **Recall**: 0.53 (Class 0), 0.68 (Class 1)
-- **F1-score**: 0.57 (Class 0), 0.63 (Class 1)
+- Train Accuracy: 0.8704
+-Train Precision: 0.8570
+-Train Recall: 0.8888
+-Train F1 Score: 0.8726
+-Test Accuracy: 0.6406
+-Test Precision: 0.6427
+-Test Recall: 0.6393
+-Test F1 Score: 0.6410
+-Test Confusion Matrix:[[1079  602]
+ [ 611 1083]]
 
 ## How to Use
 
